@@ -6,15 +6,16 @@ import json
 import openai
 from openai import OpenAI
 
-GPT_MODEL = "gpt-4-1106-preview"
-GPT_MODEL = "gpt-3.5-turbo-1106"
+GPT_MODEL = "gpt-4-turbo"
+GPT_MODEL = "gpt-3.5-turbo"
 
 RETRY_COUNT = 0
 MAX_RETRIES = 50
 WAIT_TIME = 5
 
 class NLPClient:
-    def __init__(self):
+    def __init__(self, gpt_model=GPT_MODEL):
+        self.gpt_model = gpt_model
         pass
 
     def process(self, prompt, role):
@@ -27,7 +28,7 @@ class NLPClient:
             try:
                 #Make your OpenAI API request here
                 response = client.chat.completions.create(
-                    model=GPT_MODEL,
+                    model=self.gpt_model,
                     messages=[
                         {"role": "system", "content": role},
                         {"role": "user", "content": prompt},

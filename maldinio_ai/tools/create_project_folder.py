@@ -1,7 +1,8 @@
 import os
 import json
 from datetime import datetime
-from ai import ModuleMemory, NLPProcessor
+from maldinio_ai.memory_management import ModuleMemory
+from maldinio_ai.nlp import NLPProcessor
 
 class CreateProjectFolder:
     def __init__(self, memory: ModuleMemory):

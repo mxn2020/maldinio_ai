@@ -2,10 +2,10 @@ import json
 import os
 from datetime import datetime
 from .nlp_client import NLPClient
-from ai.utils import extract_json_from_message, extract_json_string_from_message, cleanup_json_response
-from ai.utils import fill_gaps_with_underscore, verify_json
+from utils import extract_json_from_message, extract_json_string_from_message, cleanup_json_response
+from utils import fill_gaps_with_underscore, verify_json
 from typing import List
-from ai.memory_management import ModuleMemory
+from maldinio_ai.memory_management import ModuleMemory
 
 class NLPProcessor:
     def __init__(self, memory: ModuleMemory = None, nlp_client: NLPClient = None, project_path=None, prompt_path=None, response_path=None):

@@ -2,7 +2,8 @@
 
 import os
 import json
-from ai import ModuleMemory, NLPProcessor
+from maldinio_ai.memory_management import ModuleMemory
+from maldinio_ai.nlp import NLPProcessor
 
 class LoadProject:
     def __init__(self, memory: ModuleMemory):
