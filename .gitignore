@@ -1,6 +1,7 @@
 token.md
 __info/
 __info
+__prompt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
