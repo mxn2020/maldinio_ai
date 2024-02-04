@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='maldinio_ai',
-    version='0.1.7.1',
+    version='0.1.7.5',
     packages=find_packages(),
     install_requires=[
         "tiktoken>=0.4.0",

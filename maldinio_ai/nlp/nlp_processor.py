@@ -2,8 +2,8 @@ import json
 import os
 from datetime import datetime
 from .nlp_client import NLPClient
-from utils import extract_json_from_message, extract_json_string_from_message, cleanup_json_response
-from utils import fill_gaps_with_underscore, verify_json
+from maldinio_ai.utils import extract_json_from_message, extract_json_string_from_message, cleanup_json_response
+from maldinio_ai.utils import fill_gaps_with_underscore, verify_json
 from typing import List
 from maldinio_ai.memory_management import ModuleMemory
 
