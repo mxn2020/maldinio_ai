@@ -103,8 +103,12 @@ To contribute to `maldinio_ai`, clone the repository, create a new branch for yo
 
 ## License
 
-`maldinio_ai` is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+`maldinio_ai` is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
 For any questions or suggestions, reach out to Mehdi Nabhani at [mehdi@nabhani.de](mailto:mehdi@nabhani.de).
+
+---
+
+> **License note:** As of 2026-10-23 this project is licensed under the Apache License 2.0 (previously MIT). Versions released before this change remain available under MIT to those who received them.
